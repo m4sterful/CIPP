@@ -47,7 +47,7 @@ $(document).ready(function () {
                 },
                 {
                     "data": "defaultDomainName",
-                    render: function (defaultDomainName, type, row) { return '<a href="https://aad.portal.azure.com/' + defaultDomainName + '/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/SignIns"><i class="fas fa-cog fa-fw"></i></a>' }
+                    render: function (defaultDomainName, type, row) { return '<a href="https://aad.portal.azure.com/' + defaultDomainName + '"><i class="fas fa-cog fa-fw"></i></a>' }
                 },
                 {
                     "data": "defaultDomainName",
