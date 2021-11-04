@@ -2,7 +2,7 @@
 
 # Prerequisites
 
-For the installation and maintenance, we assume you have some knowledge of Github, and have setup the Secure Application Model prior to install. Haven't setup the Secure Application model yet? Check out [this](https://www.cyberdrain.com/connect-to-exchange-online-automated-when-mfa-is-enabled-using-the-secureapp-model/) script.
+For the installation and maintenance, we assume you have some knowledge of Github, and have setup the Secure Application Model prior to install. Haven't setup the Secure Application model yet? Check out [this](https://www.cyberdrain.com/connect-to-exchange-online-automated-when-mfa-is-enabled-using-the-secureapp-model/) script. For a step-by-step guide of how setting up the Secure Application Model, see [this](https://www.gavsto.com/secure-application-model-for-the-layman-and-step-by-step/).
 
 You'll also need the following permissions for your secure application model, to add permissions follow these instructions:
 
@@ -12,7 +12,7 @@ You'll also need the following permissions for your secure application model, to
 - Go to “API Permissions” and click Add a permission.
 - Choose “Microsoft Graph” and “Delegated permission” or "Application Permissions"
 - Add the permission you need.
-- Finally, click on “Grant Admin Consent for Company Name.
+- Finally, click on “Grant Admin Consent” for Company Name.
 
 ## Permissions
 
@@ -60,7 +60,7 @@ For full functionality, you'll need the following permissions for your Secure Ap
 | PrivilegedAccess.Read.AzureResources                    | Delegated              | Read privileged access to Azure resources                         |
 | PrivilegedAccess.ReadWrite.AzureADGroup                 | Application            | Read and write privileged access to Azure AD groups               |
 | PrivilegedAccess.ReadWrite.AzureResources               | Delegated              | Read and write privileged access to Azure resources               |
-| profile                                                 | Delegated              | View users' basic profile                                         |
+| OpenID permissions - profile                            | Delegated              | View users' basic profile                                         |
 | Reports.Read.All                                        | Delegated, Application | Read all usage reports                                            |
 | RoleManagement.ReadWrite.Directory                      | Delegated, Application | Read and write directory RBAC settings                            |
 | SecurityActions.ReadWrite.All                           | Delegated              | Read and update your organization's security actions              |
@@ -87,6 +87,7 @@ You'll need the following to get started;
 - A fork of [this](https://github.com/KelvinTegelaar/CIPP) repo
 - A fork of [this](https://github.com/KelvinTegelaar/CIPP-API) repo
 - An active Azure Subscription
+- A GitHub personal access token. You can find instructions on what you need and the minimum permissions to do this [here](https://docs.microsoft.com/en-us/azure/static-web-apps/publish-azure-resource-manager?tabs=azure-cli#create-a-github-personal-access-token). You only need to follow the "Create a GitHub personal access token" section
 
 # Automated setup
 
